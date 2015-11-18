@@ -21,8 +21,9 @@ p {
 	line-height: 1.75;
 }
 
-p.large {
-	font-size: 16px;
+p.large, li {
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 a,
@@ -34,14 +35,15 @@ a.active {
 }
 
 a {
-	color: @brand-primary;
+	color: black;
+	font-weight: 700;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-	color: darken(@brand-primary, 10%);
+	color: rgba(0,0,0,0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-darkest-gray {
 	background-color: @gray-darkest;
+}
+
+.bold {
+	font-weight: 700;
 }
 
 // Restyled Primary Buttons
@@ -162,7 +168,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/header-bg.jpg");
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
@@ -175,15 +183,16 @@ header {
 		.intro-lead-in {
 			.serif-font;
 			font-style: italic;
-			font-size: 22px;
-			line-height: 22px;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 35px;
 			margin-bottom: 25px;
 		}
 		.intro-heading {
 			.heading-font;
 			font-weight: 700;
-			font-size: 22px;
-			line-height: 34px;
+			font-size: 30px;
+			line-height: 45px;
 			margin-bottom: 25px;
 		}
 	}
@@ -196,16 +205,15 @@ header {
 			padding-bottom: 200px;
 			.intro-lead-in {
 				.serif-font;
-				font-style: italic;
-				font-size: 40px;
-				line-height: 60px;
+				font-size: 30px;
+				line-height: 45px;
 				// margin-bottom: 60px;
 			}
 			.intro-heading {
 				.heading-font;
 				font-weight: 700;
-				font-size: 40px;
-				line-height: 60px;
+				font-size: 50px;
+				line-height: 75px;
 				// margin-bottom: 50px;
 			}
 		}
@@ -215,14 +223,15 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
     h2.section-heading {
 		font-size: 40px;
 		margin-top: 0;
 		margin-bottom: 15px;
     }
     h3.section-subheading {
-		font-size: 16px;
+		font-size: 20px;
+		line-height: 1.5;
 		.serif-font;
 		text-transform: none;
 		font-style: italic;
@@ -231,9 +240,16 @@ section {
     }
 }
 
+.section-paragraph {
+		padding: 0 25px;
+}
+
 @media(min-width:768px) {
 	section {
-		padding: 150px 0;
+		padding: 100px;
+	}
+	.section-paragraph {
+		padding: 0 175px;
 	}
 }
 
@@ -293,7 +309,7 @@ section {
             position: absolute;
             z-index: 100;
             background-color: @brand-primary;
-            color: white;
+            color: black;
             border-radius: 100%;
             border: 7px solid #f1f1f1;
             text-align: center;
@@ -418,25 +434,6 @@ section {
 	            padding: 0 100px 20px 20px;
 	        }
 	    }
-	}
-}
-
-// Team Section
-
-.team-member {
-	text-align: center;
-	margin-bottom: 50px;
-	img {
-		margin: 0 auto;
-		border: 7px solid white;
-	}
-	h4 {
-		margin-top: 25px;
-		margin-bottom: 0;
-		text-transform: none;
-	}
-	p {
-		margin-top: 0;
 	}
 }
 
