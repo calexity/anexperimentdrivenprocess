@@ -15,4 +15,4 @@ Then you should see your changes locally (and on the Github page). You can't pus
 
 # Contact Us
 
-If you want to learn more, check out [Stickies.io on Twitter](https://twitter.com/stickiesio)[Carbon Five on Twitter](https://twitter.com/carbonfive).
+If you want to learn more, check out [Stickies.io on Twitter](https://twitter.com/stickiesio) or [Carbon Five on Twitter](https://twitter.com/carbonfive).
